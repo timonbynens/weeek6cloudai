@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:7071/api
+
+### Exercise 1 — upload an image (put cat.png next to this file)
+POST {{baseUrl}}/UploadImage
+Content-Type: multipart/form-data; boundary=----Boundary
+
+------Boundary
+Content-Disposition: form-data; name="file"; filename="cat.png"
+Content-Type: image/png
+
+< ./cat.png
+------Boundary--
+
+### Exercise 2 — write a person to Cosmos DB
+POST {{baseUrl}}/AddPerson
+Content-Type: application/json
+
+{
+  "firstName": "Timon",
+  "lastName": "Bynens",
+  "email": "test@example.com"
+}
+
+### Exercise 2 — read a secret from Key Vault
+GET {{baseUrl}}/GetSmtpServer
+
+### Exercise 4 — get a link that expires in 2 minutes (use the fileName from the upload)
+GET {{baseUrl}}/GetImageLink?name=PASTE_FILENAME_HERE

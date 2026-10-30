@@ -1,0 +1,17 @@
+global using Azure.Identity;
+global using Azure.Security.KeyVault.Secrets;
+global using Azure.Storage.Blobs;
+global using Azure.Storage.Blobs.Models;
+global using Azure.Storage.Sas;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Azure.Cosmos;
+global using Microsoft.Azure.Functions.Worker;
+global using Microsoft.Azure.Functions.Worker.Builder;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using Microsoft.Extensions.Logging;
+global using Howest.Models;
+global using Howest.Repositories;
+global using Howest.Services;
